@@ -8,9 +8,10 @@ function Main() {
        <div className='contain-div'>
       <h1>Hi, im <span className='hamza'>Hamza</span> a Software Engineer Based in Jordan</h1>
       <Button className='btns'>Got Porject ? </Button>
-      <Button >Lets Talk</Button>
+      <Button  className='btns1'>Lets Talk</Button>
       </div>
       <img src={Hamza}/>
+
     </div>
   )
   

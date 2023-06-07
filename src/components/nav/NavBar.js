@@ -1,31 +1,36 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav';
 import './style.scss';
-import img from '../../assets/img.png'
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+import { HashLink } from 'react-router-hash-link';
 function NavBar() {
     return (
-      <div className='nav'>
+      <div className='fixed;'>
         <Nav className='nav-item'
           activeKey="/"
           onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
         >
-        <img src={img} className='img'/>
+        <Nav.Item>
+          <HashLink to ='/' className='icon'><i class="fa-solid fa-code"></i></HashLink>
+        </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/home">Home</Nav.Link>
+            <HashLink to="/">Home</HashLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1">Services</Nav.Link>
+            <HashLink to="#services" smooth>Services</HashLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">Works</Nav.Link>
+            <Link to="link-2">Works</Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">Contact</Nav.Link>
+            <Link to="link-2">Contact</Link>
           </Nav.Item>
         <Button> Let's Talk</Button>
         </Nav>
         </div>
+        
       );
       
 }

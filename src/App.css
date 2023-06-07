@@ -1,8 +1,11 @@
 body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 5% 3% 5% 3%;
+    margin: 3% 2% 3% 2%;
     background-image: url('./assets/back.jpg');
     background-position: center;
     background-repeat: no-repeat;
