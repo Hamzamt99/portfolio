@@ -10,6 +10,7 @@ export default function Router() {
       <Routes>
         <Route exact path='/' element={<Main/>}/>
         <Route exact path='#services' element={<Services/>}/>
+        <Route exact path='#home' element={<Main/>}/>
       </Routes>
     </div>
   )

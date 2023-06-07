@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 function NavBar() {
     return (
-      <div className='fixed;'>
+      <div  id='home'>
         <Nav className='nav-item'
           activeKey="/"
           onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
