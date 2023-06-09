@@ -23,33 +23,65 @@
             padding: 1% 2% 1% 1.5%;
             width: 45%;
             transition: background-color 1s;
-            height: 28vh;
+            height: 35vh;
         }
 
         .card:hover {
-            background-color: black;
+            background-color: orange;
             color: white;
             cursor: pointer;
 
         }
-        @media only screen and (max-width:768px) {
+        
+        @media only screen and (min-width:500px) and (max-width:768px) {
             .card {
-                width: 90%;
-                height: 50vh;
+                width: 200px;
+                height: 60vh;
+                margin: 20px;
             }
             
         }
+        
+        @media only screen and (min-width:100px) and (max-width:499px) {
+            .card {
+                padding: 9px;
+                width: 200px;
+                height: 42vh;
+            }
+            
+        }
+        h1{
+            font-weight: 700;
+        }
+        h2{
+            padding: 2%;
+        }
         p{
+            padding-top: 3%;
             width: 100%;
+            font-weight: 500;
         }
     }
+
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:399px) {
     .cardRow {
         flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width:670px) {
+    .cardRow {
         gap: 10px;
     }
 
 }
+
+
+
+
+
 

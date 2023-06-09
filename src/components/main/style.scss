@@ -10,6 +10,7 @@
     }
 
     img {
+        border-radius: 50%;
         background-color: rgb(250, 247, 242);
         width: 50%;
         max-width: 400px;
@@ -19,7 +20,7 @@
     button {
         color: black;
         border: 1px solid rgb(0, 0, 0);
-        padding: 1% 6% 1% 6%;
+        padding: 2% 6% 2% 6%;
         margin-bottom: 0;
         border-radius: 0;
         background-color: transparent;
@@ -29,20 +30,27 @@
         outline: none;
     }
 
+    .btns1 {
+        font-weight: 500;
+    }
+
     .btns1:hover {
         background-color: orange;
         transition-delay: 35ms;
     }
-    .btns1:active{
+
+    .btns1:active {
         background-color: orange;
         transition-delay: 35ms;
     }
 
     .btns {
+        font-weight: 500;
         background-color: rgb(0, 0, 0);
         color: white;
     }
-    .btns:active{
+
+    .btns:active {
         background-color: orange;
         transition-delay: 35ms;
     }
@@ -53,7 +61,7 @@
         transition-delay: 35ms;
     }
 
-    .hamza {
+    .pargraph {
         color: orange;
     }
 
@@ -64,29 +72,86 @@
         text-transform: uppercase;
 
     }
+
+    @media only screen and (max-width: 768px) {
+        img {
+            width: 40%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+    }
+
+    @media only screen and (min-width: 200px) and (max-width:768px) {
+        img {
+            width: 50%;
+            height: 70%;
+            border-radius: 50%;
+        }
+
+    }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and  (min-width: 200px) and (max-width:768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:295px) {
     .container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    img {
+        width: 30%;
+        height: 5%;
+        border-radius: 50%;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    img {
-        background-color: rgb(250, 247, 242);
-        width: 40%;
-        height: auto;
-    }
-   
-}
-.hash{
+
+.hash {
     position: fixed;
-    border: solid black;
+    border: solid orange;
     border-width: 1px 3px 3px 1px;
     display: inline-block;
     padding: 5px 15px 5px 15px;
-    right: 100px;
-    color: orange;
-   }
+    right: 3%;
+    color: black;
+    background-color: transparent;
+    transition: background-color 1.2s;
+}
+
+.hash:hover {
+    background-color: orange;
+    border: solid black;
+    border-width: 1px 3px 3px 1px;
+}
+
+.hash:active {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .hash {
+        right: 2%;
+        color: black;
+        padding: 4px 8px 4px 8px;
+        margin-right: 1px;
+
+        .hash:hover {
+            background-color: orange;
+            border: solid black;
+            border-width: 1px 3px 3px 1px;
+        }
+    }
+
+}
+
+
+
 
